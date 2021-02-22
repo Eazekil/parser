@@ -1,7 +1,9 @@
-public class ReadJsonThread extends Thread {
+package entities;
+
+public class FileReadThread extends Thread {
     private String fileName;
 
-    public ReadJsonThread(String fileName) {
+    public FileReadThread(String fileName) {
         this.fileName = fileName;
     }
 
