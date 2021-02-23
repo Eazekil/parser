@@ -1,11 +1,11 @@
-import entities.NumberId;
+
 import entities.ReadCsvThread;
 import entities.ReadJsonThread;
-import entities.ReadTxtThread;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 //jsonFile.json
 //testFile.csv
+//testFileFromXl.csv
 
 public class Write {
     public static void main(String[] args) {
@@ -21,7 +21,6 @@ public class Write {
                 readJsonThread.start();
             }else if(args[i].endsWith(".xlsx")){
                 //new ReadXlsxThread(args[i]).start();
-                //new entities.FileReadThread(args[i]).start();
             }else{
                 System.out.println("Invalid file extension: "+args[i]);
             }

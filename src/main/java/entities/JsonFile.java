@@ -1,24 +1,24 @@
 package entities;
 
 public class JsonFile {
-    private int orderId;
-    private Object amount;
+    private String orderId;
+    private String amount;
     private String currency;
     private String comment;
 
-    public int getOrderId() {
+    public String getOrderId() {
         return orderId;
     }
 
-    public void setOrderId(int orderId) {
+    public void setOrderId(String orderId) {
         this.orderId = orderId;
     }
 
-    public Object getAmount() {
+    public String getAmount() {
         return amount;
     }
 
-    public void setAmount(long amount) {
+    public void setAmount(String amount) {
         this.amount = amount;
     }
 
